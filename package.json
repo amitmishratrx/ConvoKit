@@ -1,0 +1,47 @@
+{
+  "name": "@amitmishratrx/convokit",
+  "version": "0.1.0",
+  "description": "Composable React Native UI for direct and group conversations",
+  "license": "MIT",
+  "author": "Amit Mishra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amitmishratrx/ConvoKit.git"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-native": ">=0.88.0",
+    "react-native-safe-area-context": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "^5.6.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
