@@ -27,6 +27,7 @@ jobs:
         with:
           packages: platform-tools
       - run: npm ci
+      - run: npm ci
         working-directory: example
       - run: npm test -- --runInBand
         working-directory: example
